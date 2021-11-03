@@ -269,16 +269,14 @@ Document root: `/public`
 	"php": ">=7.4",		
 ```		
 
-	`+`
+	+
 
 	composer install
 						
 3. In `.env`:
 
 ```		  
-...
 APP_ENV=production
-...
 ```
 
 4. Error:
@@ -292,9 +290,7 @@ _"SQLSTATE[42000]: Syntax error or access violation: 1231 Variable 'sql_mode' ca
 In `config/database.php`:
 
 ```php
-...
 'strict' => false,
-...
 ```	
 	
 5. Error:
@@ -308,9 +304,7 @@ _"SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ebdb.users' doesn't
 Add in `app/User.php`:
 
 ```php
-...
 protected $table= "users";																													
-...	
 ```	
 
 6. 
